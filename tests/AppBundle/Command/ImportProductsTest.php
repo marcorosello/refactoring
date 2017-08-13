@@ -45,7 +45,7 @@ class ImportProductsTest extends WebTestCase
     /**
      *
      */
-    public function testImport()
+    public function testExecute()
     {
         $this->commandTester->execute(array(
             'command'  => 'products:import',

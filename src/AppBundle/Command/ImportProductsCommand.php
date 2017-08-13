@@ -64,8 +64,7 @@ class ImportProductsCommand extends ContainerAwareCommand
                 } catch (\Exception $ex) {
                     //do nothing
                     $output->writeln('skipping');
-                    //$stmt1->bindValue(':ean', $this->lastEan);
-                    //$stmt1->execute();
+                    $this->dbal->query('DELETE FROM `ean` WHERE ean = ' . $this->lastEan);
                 }
             }
             fclose($handle);
