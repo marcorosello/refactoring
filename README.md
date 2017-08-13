@@ -24,3 +24,6 @@ vendor/bin/phpunit -c phpunit.xml tests/
 bin/console --env="dev" products:import products.csv
 
 ```
+- Test the command below
+- Refactor it to follow best practices and clean architecture
+- Add at least 2 unit tests
