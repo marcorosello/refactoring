@@ -1,6 +1,7 @@
 {
     "name": "vagrant/app",
     "license": "proprietary",
+    "description": "Demo site to practice refactoring and testing.",
     "type": "project",
     "autoload": {
         "psr-4": {

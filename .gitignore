@@ -16,5 +16,4 @@ var
 !var/SymfonyRequirements.php
 /vendor/
 /web/bundles/
-.DS_Store
 .idea/
