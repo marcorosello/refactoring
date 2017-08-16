@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a26f69841e24de67ed0332664bad2c6b",
+    "content-hash": "9fbe3dae08cac8fb3913af682a845287",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2251,6 +2251,98 @@
     ],
     "packages-dev": [
         {
+            "name": "alexia/php7mar",
+            "version": "v0.2.0-beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Alexia/php7mar.git",
+                "reference": "2ca8796eab3d8cd7407664055499aaacf5725b5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Alexia/php7mar/zipball/2ca8796eab3d8cd7407664055499aaacf5725b5a",
+                "reference": "2ca8796eab3d8cd7407664055499aaacf5725b5a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "project",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Alexia E. Smith",
+                    "email": "washuu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP 7 MAR, or just \"php7mar\", is a command line utility to generate reports on existing PHP 5 code to assist developers in porting their code quickly to PHP 7.",
+            "homepage": "https://github.com/Alexia/php7mar",
+            "keywords": [
+                "PHP7",
+                "migration",
+                "php5",
+                "porting"
+            ],
+            "time": "2016-04-26T16:11:23+00:00"
+        },
+        {
+            "name": "etsy/phan",
+            "version": "0.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/etsy/phan.git",
+                "reference": "e16ea3a01fdb4b38cd12d411200a1926ed56dd2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/etsy/phan/zipball/e16ea3a01fdb4b38cd12d411200a1926ed56dd2a",
+                "reference": "e16ea3a01fdb4b38cd12d411200a1926ed56dd2a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ast": "^0.1.4",
+                "php": "~7.1.0",
+                "symfony/console": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2.1"
+            },
+            "bin": [
+                "phan",
+                "phan_client",
+                "tocheckstyle"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Phan\\": "src/Phan"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rasmus Lerdorf"
+                },
+                {
+                    "name": "Andrew S. Morrison"
+                }
+            ],
+            "description": "A static analyzer for PHP",
+            "keywords": [
+                "analyzer",
+                "php",
+                "static"
+            ],
+            "time": "2017-07-11T15:55:24+00:00"
+        },
+        {
             "name": "myclabs/deep-copy",
             "version": "1.6.1",
             "source": {
@@ -4299,7 +4391,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "alexia/php7mar": 10
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
