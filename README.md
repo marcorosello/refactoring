@@ -4,19 +4,9 @@
 
  ```
   composer install
-  run database.sql
+  mysql -u root  < database.sql
+  or paste database.sql content in your database client and run it
  ```
-
-## Tools
-
-phpstan (static analysis)
-```
-vendor/bin/phpstan analyse src --level 7
-```
-phpunit
-```
-vendor/bin/phpunit -c phpunit.xml tests/
-```
 
 ## Exercise
 
@@ -34,3 +24,15 @@ bin/console --env="dev" products:import products.csv
 https://docs.google.com/presentation/d/14Jp_w4k9Ud2B2eONI1UGtXMqc96_qfGUNgisEmV7HTU/edit?usp=sharing
 - Refactoring presentation
 https://docs.google.com/presentation/d/1yaDxvvjSzvWx-qwR2c1ulDNdIYv14vuEtKrPL9ckEmY/edit?usp=sharing
+
+
+## Tools
+
+phpstan (static analysis)
+```
+vendor/bin/phpstan analyse src --level 7
+```
+phpunit
+```
+vendor/bin/phpunit -c phpunit.xml tests/
+```

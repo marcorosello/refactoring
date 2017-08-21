@@ -1,6 +1,8 @@
-CREATE DATABASE `app`;
+CREATE DATABASE IF NOT EXISTS `app`;
 
-CREATE TABLE `ean` (
+USE `app`;
+
+CREATE TABLE IF NOT EXISTS `ean` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(32) NOT NULL,
   `ean` varchar(32) NOT NULL,
