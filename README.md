@@ -4,15 +4,14 @@
 
  ```
   composer install
+
   mysql -u root  < database.sql
-  or paste database.sql content in your database client and run it
  ```
 
 ## Exercise
 
 ```
 bin/console --env="dev" products:import products.csv
-
 ```
 - Test the command below
 - Refactor it to follow best practices and clean architecture
@@ -28,11 +27,15 @@ https://docs.google.com/presentation/d/1yaDxvvjSzvWx-qwR2c1ulDNdIYv14vuEtKrPL9ck
 
 ## Tools
 
+cache clea r
+```
+bin/console cache:clear --no-warmup
+```
 phpstan (static analysis)
 ```
 vendor/bin/phpstan analyse src --level 7
 ```
 phpunit
 ```
-vendor/bin/phpunit -c phpunit.xml tests/
+vendor/bin/phpunit -c phpunit.xml.dist tests/
 ```

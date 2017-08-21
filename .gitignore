@@ -16,4 +16,4 @@ var
 !var/SymfonyRequirements.php
 /vendor/
 /web/bundles/
-.idea/
+app/bootstrap.php.cache
