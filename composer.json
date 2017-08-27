@@ -34,12 +34,12 @@
         "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
-        "alexia/php7mar": "0.2.0beta",
-        "etsy/phan": "^0.9.3",
         "phpstan/phpstan": "^0.8.0",
         "phpunit/phpunit": "^6.3",
         "sensio/generator-bundle": "^3.0",
-        "symfony/phpunit-bridge": "^3.0"
+        "symfony/phpunit-bridge": "^3.0",
+        // "etsy/phan": "^0.9.3",
+        // "alexia/php7mar": "0.2.0beta"
     },
     "scripts": {
         "symfony-scripts": [

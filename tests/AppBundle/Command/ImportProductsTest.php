@@ -1,13 +1,5 @@
 <?php
 
-/**
- * This file is part of Boozt Platform
- * and belongs to Boozt Fashion AB.
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- *
- */
 namespace Test\AppBundle\Command;
 
 use AppBundle\Command\ImportProductsCommand;
@@ -54,5 +46,13 @@ class ImportProductsTest extends WebTestCase
         ));
 
         $output = $this->commandTester->getDisplay();
+        $stmt = $this->conn->prepare('SELECT * FROM ean');
+
+        $stmt->execute();
+        $products = $stmt->fetchAll();
+
+        $this->assertNotEmpty($products);
+
+        $this->conn->executeQuery('TRUNCATE ean');
     }
 }
